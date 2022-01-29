@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Allura&family=Comfortaa:wght@300&family=Comforter&family=Comforter+Brush&family=Estonia&family=Great+Vibes&family=Hurricane&family=Irish+Grover&family=Itim&family=PT+Sans&family=Press+Start+2P&family=Sassy+Frass&family=Tajawal:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Comfortaa:wght@300&family=Comforter&family=Estonia&family=Great+Vibes&family=Irish+Grover&family=Itim&family=PT+Sans&family=Press+Start+2P&family=Sassy+Frass&family=Tajawal:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Comfortaa:wght@300&family=Comforter&family=Comforter+Brush&family=Estonia&family=Great+Vibes&family=Irish+Grover&family=Itim&family=PT+Sans&family=Press+Start+2P&family=Sassy+Frass&family=Tajawal:wght@300&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>Proyect Tattoo</title> 
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/3248logotipoweb.ico">
+</head>
+
+
+<body>
+    <header>
+      <div id="cabeceraTotal">
+          <div id="cabecereaTitulo">
+            <h1>Project Tattoo</h1>
+          </div>
+          <div id="cabeceraFoto"><img src="imagenes/logotipoweb.png" title ="logo Proyect Tattoo" id="logocab"></div>
+          </div>
+          <div id="lineacab">
+        <hr>
+      </div>
+
+      <div id= "menuDiv">
+        <nav id="inicio">
+          <ul id="iniprin">
+            <li id="popupLog">
+              <!------------------------ Button trigger modal --------------------------->
+              <div>
+                   <button id="buttonModel" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Log In</button>
+              </div>
+              <!-------------------------------- Modal --------------------------------->
+<div class="modal fullscreen-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">LogIn</h4>
+      </div>
+    <div class="modal-body">
+      <ul>
+        <li id="formLog">
+              <form   action="recepción.php" form="get">
+                 <label for="user">Usuario</label> &nbsp;
+                 <input type="text" name="usuario" id="user" placeholder="Nombre de usuario" required><br>
+                 <label for="pass">Contraseña</label> &nbsp;
+                 <input type="text" name="contraseña" id="pass" placeholder="Escribe tu contraseña" required><br>
+                 <input id="botoninput" type="submit" value="Ok" >
+              </form>
+        </li> 
+      </ul>
+    </div>
+    <div class="modal-footer">
+        <button id="buttonPop1" type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+        <button id="buttonPop2" type="button" class="btn btn-primary">Enviar</button>
+    </div>
+    </div>
+  </div>
+</div>
+            </li>
+      <!-------------------------------------------Fin  Modal------------------------------------> 
+      <li><a href="quienesSomos.html">¿Quienes somos?</a></li>
+      <li class="liPrin"><a href="">Estilos</a>
+    <ul>
+      <li><a href="dotWorkStyle.html">Dot Work</a></li>
+      <li><a href="">Japonés</a></li>
+      <li><a href="">Hyper realismo</a></li>
+      <li><a href="">Old School</a></li>
+   </ul>
+      </li>
+            
+      <li><a href="">Zona Piercing</a></li>
+      <li><a href="">Contacto</a></li>    
+          </ul>     
+        </nav>
+      </div>
+<!-------------------------NavBar------------------------------->
+      <div id= "menuDivNavBar" class="navbar-header"></div>
+        <nav id="inicioNavBar" class="navbar navbar-default" role="navigation">
+           <button id="buttonNav" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+
+  <div class="navbar-collapse collapse">
+    <ul id="iniprinNavBar"class="nav navbar-nav navbar-center">       
+       <li>Login
+    <ul>
+      <li>
+        <form  action="recepción.php" form="get">
+           <label for="user">Usuario</label> &nbsp;
+           <input type="text" name="usuario" id="user" placeholder="Nombre de usuario" required><br>
+           <label for="pass">Contraseña</label> &nbsp;
+           <input type="text" name="contraseña" id="pass" placeholder="Escribe tu contraseña" required><br>
+           <input id="botoninput" type="submit" value="Ok" >
+        </form>
+    </li>
+  </ul>
+    </li>
+    <li><a href="quienesSomos.html">¿Quienes somos?</a></li>
+    <li>Estilos
+  <ul>
+    <li><a href="dotWorkStyle.html">Dot Work</a></li>
+    <li>Japonés</li>
+    <li>Hyper realismo</li>
+    <li>Old School</li>
+  </ul>
+    </li>
+    <li>Zona Piercing</li>
+    <li>Contacto</li>
+  </ul>
+        </nav>   
+
+<!-------------------------Fin NavBar------------------------------->
+    </header>
+
+<body>
+
+    <footer id="footer">
+      <div id="foottotal">
+        <div id="onefoot">
+           2021 &copy; Proyect Tattoo &reg; 
+        </div>
+        <div id="twoofoot">
+            <ul id="iconsFoot">
+              <div><li><a href="tweeter.com"><img src="iconos/gorjeo.png" alt="icono tweeter" height="20px"></a></li></div>
+              <div><li><a href="instagram.com"><img src="iconos/instagram.png" alt="icono instagram" height="20px"></a></li></div>
+              <div><li><a href="facebook.com"><img src="iconos/facebook.png" alt="icono facebook" height="20px"></a></li></div>
+              <div><li><a href="whatsapp.com"><img src="iconos/whatsapp.png" alt="icono whatssap" height="20px"></a></li></div>
+      </ul>
+        </div>  
+      </div>
+    </footer>
+   
+<script src="js/popper.js"></script>   
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
